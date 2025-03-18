@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, jsonify
+
 from sqlalchemy.orm import aliased
 
 from flask_sqlalchemy import SQLAlchemy  # Add this import for SQLAlchemy
@@ -241,4 +242,4 @@ with flask_app.app_context():
 
 # Run the Flask app
 if __name__ == '__main__':
-    flask_app.run(host='127.0.0.1', port=8005, debug=True)
+    flask_app.run( debug=True)
